@@ -1,0 +1,33 @@
+<h2>BOOK</h2>
+
+ <div class="display" *ngFor="let b of books">
+    <h4>Title    : {{b.title}}</h4>
+    <h4>ISBN     : {{b.isbn}}</h4>
+    <h4>Sector   : {{b.sector}}</h4>
+    <h4>Author   : {{b.author}}</h4>
+    <h4>Publisher:{{b.author}}</h4>
+    <h4>Publication Date: {{b.date}}</h4>
+    <h4>No of Pages: {{b.noOfPages}}</h4>
+
+    <button class="buttonb"  type="button"  style="vertical-align:middle" routerLink="/borrow" ><span> Borrow </span></button><br>
+
+    
+</div> 
+
+<hr>
+
+<h2>DVD</h2>
+
+ <div class="display" *ngFor="let d of dvds">
+    <h4>Title           : {{d.title}}</h4>
+    <h4>ISBN            : {{d.isbn}}</h4>
+    <h4>Creator         : {{d.producer}}</h4>
+    <h4>Publisher       : {{d.publisher}}</h4>
+    <h4>Language        : {{d.language}}</h4>
+    <h4>Publication Date: {{d.date}}</h4>
+    <h4>Total time      : {{d.totalTime}}</h4>
+
+    <button class="buttonb"  type="button"  style="vertical-align:middle" routerLink="/borrow" ><span> Borrow </span></button><br>
+</div> 
+    
+<a routerLink="/home">Go Back</a>

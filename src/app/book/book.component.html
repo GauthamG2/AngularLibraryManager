@@ -1,0 +1,42 @@
+<h3>Add Book</h3>
+
+
+<div class="container">
+  <form (ngSubmit)="add(a)" #a="ngForm" >
+    
+   <div class="form-group">
+    <label for="fname">Title</label>
+    <input type="text" id="title"  ngModel name="title" #title=ngModel placeholder="Book title.." required >
+
+    <label for="lname">ISBN</label>
+    <input type="text" id="lname" ngModel name="isbn" #isbn=ngModel placeholder="ISBN number.." required>
+
+    <label for="lname">Sector</label>
+    <input type="text" id="lname"  ngModel name="sector" #sector=ngModel placeholder="Sector.." required>
+
+    <label for="lname">Author</label>
+    <input type="text" id="lname" ngModel name="author" #author=ngModel placeholder="Author.."required>
+
+    <label for="lname">Publisher</label>
+    <input type="text" id="lname" ngModel name="publisher" #publisher=ngModel placeholder="Publisher.."required>
+
+    <label for="lname">Publication Date</label>
+    <input type="text" id="lname" ngModel name="date" #date=ngModel placeholder="Publication Date" required>
+
+    <label for="lname">No of Pages</label>
+    <input type="text" id="lname" ngModel name="noofpages" #noofpages=ngModel placeholder="No of pages" required  >
+
+    
+  
+    <button type="submit" class="btn btn-primary">Add Book
+    </button>
+  
+</div>
+
+</form>
+</div>
+
+<a routerLink="/home">Go Back</a>
+
+
+

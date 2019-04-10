@@ -1,0 +1,18 @@
+<h3>Delete DVD</h3>
+
+ <div class="display" *ngFor="let b of books ; let a=index">
+    <h4>Title    : {{b.title}}</h4>
+    <h4>ISBN     : {{b.isbn}}</h4>
+
+    <br/>
+    <br/>
+    <button class="buttonb"  type="reset"  style="vertical-align:middle"  (click)="Erase(a)" ><span> Delete </span></button><br>
+    
+</div> 
+
+<hr>
+
+    
+<a routerLink="/home">Go Back</a>
+
+

@@ -1,0 +1,36 @@
+<h3>Add DVD</h3>
+
+
+<div class="container">
+  <form (ngSubmit)="adddvd(a)" #a="ngForm">
+    
+  <div class="form-group">
+    <label for="fname">Title</label>
+    <input type="text" id="fname" ngModel name="titledvd" #titledvd=ngModel  placeholder="DVD title..">
+
+    <label for="lname">ISBN</label>
+    <input type="text" id="lname" ngModel name="isbndvd" #isbndvd=ngModel placeholder="ISBN number..">
+
+    <label for="lname">Creator</label>
+    <input type="text" id="lname" ngModel name="creatordvd" #creatordvd=ngModel placeholder="Creator..">
+
+    <label for="lname">Publisher</label>
+    <input type="text" id="lname" ngModel name="publisherdvd" #publisherdvd=ngModel placeholder="Publisher..">
+
+    <label for="lname">Language</label>
+    <input type="text" id="lname" ngModel name="languagedvd" #languagedvd=ngModel placeholder="Language">
+
+    <label for="lname">Date</label>
+    <input type="text" id="lname" ngModel name="datedvd" #datedvd=ngModel placeholder="Date of Publication">
+
+    <label for="lname">Total time</label>
+    <input type="text" id="lname" ngModel name="totaltimedvd" #totaltimedvd=ngModel placeholder="Time length">
+
+    
+  
+    <button type="submit" class="btn btn-primary">Add DVD</button>
+  
+</div>
+
+<a routerLink="/home">Go Back</a>
+
